@@ -4,21 +4,24 @@
     "PAN":2,
     "PRI":3,
     "MORENA":4,
-    "PT":5
+    "PT":5,
+    "undecided":200
   },
   {"date":"20170405",
     "PRD":2,
     "PAN":1,
     "PRI":4,
     "MORENA":3,
-    "PT":5
+    "PT":5,
+    "undecided":251
   },
   {"date":"20170412",
     "PRD":5,
     "PAN":4,
     "PRI":3,
     "MORENA":2,
-    "PT":1
+    "PT":1,
+    "undecided":500
   },
   {"date":"20170419",
     "PRD":1,

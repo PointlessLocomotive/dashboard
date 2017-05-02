@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mexico's state elecctions 2017</title><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles/vendor.css"><link rel="stylesheet" href="styles/main.css"></head><body><!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><div class="container-fluid"><div class="header"><ul class="nav nav-pills pull-right"><li><a href="https://github.com/PointlessLocomotive/dashboard">About</a></li></ul><h3 class="text-muted">EDOMEX elections 2017</h3></div><div class="jumbotron"><h1>EDOMEX elections 2017</h1><p>...</p><p>This webpage shows the output of the analysis that we follow to know the progress of a candidate in the next elections in the EDOMEX In the next three sections we show some insights in the information we gather and analyzed in the last 6 weeks.</p><p>Section One: Details about candidates based in their twitter account tweets</p><p>Section Two: popularity score based on positive or negative tweets from their mentions</p><p>Section Three: weekly rank based in vote prediction, calculated from the number of users supporting each candidate in Twitter.</p></div><div></div><hr><h1 style="text-align:center;font-size:4em;line-height:3em">Candidate Profile</h1><div class="row" id="profile-3"></div><div class="row col-md-offset-3" id="profile-2"></div><hr><div class="row"><h1 style="text-align:center;font-size:4em;line-height:3em">Tweet popularity analysis</h1><div class="col-md-12"><canvas id="popularity" width="400" height="400"></canvas></div></div><h1 style="text-align:center;font-size:4em;line-height:1em;margin-top:3em">Candidate popularity</h1><section class="cd-horizontal-timeline"><div class="timeline"><div class="events-wrapper"><div class="events"><ol><li><a href="#0" data-date="29/03/2017" class="selected">30 Mar</a></li><li><a href="#0" data-date="05/04/2017">07 Apr</a></li><li><a href="#0" data-date="12/04/2017">19 Apr</a></li><li><a href="#0" data-date="19/04/2017">21 Apr</a></li><li><a href="#0" data-date="26/04/2017">28 Apr</a></li><li><a href="#0" data-date="03/05/2017">04 May</a></li></ol><span class="filling-line" aria-hidden="true"></span></div></div><ul class="cd-timeline-navigation"><li><a href="#0" class="prev inactive">Prev</a></li><li><a href="#0" class="next">Next</a></li></ul></div><div class="events-content"><ol id="places"></ol></div></section><div class="footer"><p><a href="https://github.com/PointlessLocomotive/Dashboard" target="_blank">See it in github</a></p></div></div><script id="places-template" type="text/x-handlebars-template"><li class="{{class}}" data-date="{{date}}">
+        <div class="row">
+          <div class="col-md-2" style="margin-top:{{PRD-margin}}px;">
+            <p>#{{PRD}}</p>
+            <img   class="img-circle" style="width:75px;" src="https://pbs.twimg.com/profile_images/851092999316451328/iDh9IXJE_400x400.jpg" >
+          </div>
+          <div class="col-md-2" style="margin-top:{{PAN-margin}}px;">
+            <p>#{{PAN}}</p>
+            <img   class="img-circle" style="width:75px;" src="https://pbs.twimg.com/profile_images/848763390054907904/Sr8XPa7q.jpg" >
+          </div>
+          <div class="col-md-2" style="margin-top:{{MORENA-margin}}px;">
+            <p>#{{MORENA}}</p>
+            <img   class="img-circle" style="width:75px;" src="https://pbs.twimg.com/profile_images/848762298919288832/a0MeFuEo_400x400.jpg" >
+          </div>
+          <div class="col-md-2" style="margin-top:{{PT-margin}}px;">
+            <p>#{{PT}}</p>
+            <img   class="img-circle" style="width:75px;" src="https://pbs.twimg.com/profile_images/849474585397526528/B9toWSO5_400x400.jpg" >
+          </div>
+          <div class="col-md-2" style="margin-top:{{PRI-margin}}px;">
+            <p>#{{PRI}}</p>
+            <img   class="img-circle" style="width:75px;" src="https://pbs.twimg.com/profile_images/853360356059627520/s2_3VmaW.jpg" >
+          </div>
+        <div>
+          <p class="col-md-offset-9">Undecided users: {{undecided}}</p>
+          <p class="col-md-offset-9">Total users: {{total-users}}</p>
+
+      </li></script><script id="profile-template" type="text/x-handlebars-template"><div class="col-md-4">
+      <div class="card hovercard">
+        <div class="cardheader" style="background: url('{{banner-pic}}');">
+        </div>
+        <div class="avatar">
+            <img alt="" src="{{profile-pic}}">
+        </div>
+        <div class="info">
+            <div class="title">
+                <a target="_blank" href="{{url_twitter}}">{{name}}</a>
+            </div>
+            <h3>{{political-party}}</h3>
+            <h4>Political Orientation: {{orientation}}</h4>
+            <div class="desc">Total tweets: <strong>{{total-tweets}}</strong></div>
+            <div class="desc">Positive Tweets: <strong>{{positive-tweets}}</strong></div>
+            <div class="desc">Negative Tweets: <strong>{{negative-tweets}}</strong></div>
+        </div>
+        <div class="bottom">
+            <a class="btn btn-primary btn-twitter btn-sm" href="{{url_twitter}}" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn btn-default btn-sm" rel="publisher"
+               href="{{url_wikipedia}}" target="_blank">
+                <i class="fa fa-wikipedia-w"></i>
+            </a>
+        </div>
+    </div><!-- end of card-->
+  </div></script><script>!function(e,t,a,n,c,o){e.GoogleAnalyticsObject=n,e[n]||(e[n]=function(){(e[n].q=e[n].q||[]).push(arguments)}),e[n].l=+new Date,c=t.createElement(a),o=t.getElementsByTagName(a)[0],c.src="https://www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script","ga"),ga("create","UA-XXXXX-X"),ga("send","pageview")</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script></body></html>

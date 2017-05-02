@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-    console.log( 'ready!' );
+  //  console.log( 'ready!' );
     $.ajax({
-      url: 'http://localhost:9000/scripts/candidates.json',
+      url: 'http://10.40.60.191:3030/v1/api/candidates',
       dataType: 'json',
       type: 'GET',
       success: function (candidates) {
@@ -20,7 +20,7 @@ $( document ).ready(function() {
     } );
 
     $.ajax({
-      url: 'http://localhost:9000/scripts/places.json',
+      url: 'http://10.40.60.191:3030/v1/api/places',
       dataType: 'json',
       type: 'GET',
       success: function (places) {
@@ -37,8 +37,7 @@ $( document ).ready(function() {
           places[i]['MORENA-margin'] = (places[i]['MORENA']-1)*60;
           places[i]['PAN-margin'] = (places[i]['PAN']-1)*60;
           places[i]['date'] = moment(places[i]['date']).format('DD/MM/YYYY');
-          console.log(places);
-          console.log(template(places[i]));
+
           $('#places').append(template(places[i]));
         }
 
@@ -47,5 +46,13 @@ $( document ).ready(function() {
         console.log(err);
       }
     });
+
+
+
+
+
+
+
+
 
 });
